@@ -159,7 +159,7 @@ cur.executescript('''
 symbols_list = None
 
 while True:
-	ui = input('Enter a ticker (EX. AAPL) to add/update a specific stock to the database, press enter for database autofill, or 'quit' to quit... ')
+	ui = input('Enter a ticker (EX. AAPL) to add/update a specific stock to the database, press enter for database autofill, or \'quit\' to quit... ')
 
 	if len(ui) < 1:
 		
