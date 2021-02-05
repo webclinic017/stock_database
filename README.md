@@ -7,15 +7,15 @@ In addition, I used SQLite as the DBMS, which means it's free and very lightweig
 
 
 HOW TO USE:
-  > RUN the add_companies.py file
-    > This builds the foundation of your database—you can add specific stocks by typing in the ticker symbol or you can set it to autofill
-    > You can run this file anytime to add more companies
-    > IMPORTANT: If you are using the free version of FMP's API, each stock you enter to the database uses 1 request (plus 1 request to autofill if you use it)
+  > RUN the add_companies.py file... 
+  This builds the foundation of your database—you can add specific stocks by typing in the ticker symbol or you can set it to autofill.
+  You can also run this file anytime to add more companies. 
+  IMPORTANT: If you are using the free version of FMP's API, each stock you enter to the database uses 1 request (plus 1 request to autofill if you use it).
     
-  > RUN the pull_financials.py file
-    > This file looks for a stock/stocks that currently exist in your database and pulls relevant financial information for them from 10Q's released over the past 5 years
-    > If your database doesn't have stocks in it, or if every stock already has financial info, run the add_companies.py file to add more companies
-    > You can pull financial info for specific stocks by typing in the ticker symbol or you can set it to autofill
-    > IMPORTANT: If you are using the free version of FMP's API, each stock you pull financial info for uses 4 requests (use wisely!)
+  > RUN the pull_financials.py file... 
+    This file looks for a stock/stocks that currently exist in your database and pulls relevant financial information for them from 10Q's released over the past 5 years.
+    If your database doesn't have stocks in it, or if every stock already has financial info, run the add_companies.py file to add more companies.
+    Also, similar to add_companies.py, can pull financial info for specific stocks by typing in the ticker symbol or you can set it to autofill.
+    IMPORTANT: If you are using the free version of FMP's API, each stock you pull financial info for uses 4 requests (use wisely!).
     
   > OPEN your SQLite DB file (it should be called 'stocks.sqlite')
