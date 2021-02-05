@@ -116,12 +116,12 @@ cur.executescript('''
 
 
 # Enter your FMP api key
-key = "ENTER_API_KEY_HERE" 
+key = None #<----- ENTER YOUR API KEY HERE 
 
 if key == None:
 	key = input('\nPlease enter your api key. \n> ')
-else:
-	key = "apikey=" + key
+
+key = "apikey=" + key
 
 	
 # Initialize a variable for ticker symbols to store FMP data for database autofill feature
