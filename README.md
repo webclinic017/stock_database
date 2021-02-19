@@ -7,12 +7,12 @@ In addition, I used SQLite as the DBMS, which means it's free and very user-frie
 
 
 HOW TO USE:
-  > DOWNLOAD add_companies.py, pull_financials.py, and SQLite DB (https://sqlite.org/download.html)
+  > DOWNLOAD add_companies.py, pull_financials.py, and SQLite DB
 
   > SIGN up for an account at https://financialmodelingprep.com/developer and enter your api key into the files add_companies.py and pull_financials.py
 
   > RUN the add_companies.py file... 
-This must be run first and builds the foundation of your database—you can add specific stocks by typing in the ticker symbol or you can set it to autofill. After running for the first time, you will notice a file 'stocks.sqlite' pop up in your working directory; double-click it to open, and you should see your database! IMPORTANT: If you are using the free version of FMP's API, since each stock you enter to uses 1 request, and using the autofill feature uses 1 request, you can only add up to 249 companies/day using autofill. Check your number of remaining calls on FMP's developer site under your user dashboard.
+This must be run first and builds the foundation of your database—you can add specific stocks by typing in the ticker symbol or you can set it to autofill. After running for the first time, you will notice a file 'stocks.sqlite' pop up in your working directory; double-click it to open, and you should see your database. IMPORTANT: If you are using the free version of FMP's API, since each stock you enter to uses 1 request, and using the autofill feature uses 1 request, you can only add up to 249 companies/day using autofill. Check your number of remaining calls on FMP's developer site under your user dashboard.
     
   > RUN the pull_financials.py file... 
 This file looks for a stock/stocks that currently exist in your database and pulls relevant financial information for them from 10Q's released over the past 5 years—similar to add_companies.py, can pull financial info for specific stocks by typing in the ticker symbol or you can set it to autofill. If every stock already has financial info, you will need to run the add_companies.py file to add more companies. IMPORTANT: If you are using the free version of FMP's API, since each stock you pull financial info for uses 3 requests, you can only pull the financials for up to 83 companies/day. Again, check your number of remaining calls on FMP's developer site under your user dashboard.
