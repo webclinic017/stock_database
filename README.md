@@ -3,7 +3,7 @@ This code can be used to build a database of public companies including relevant
 
 The Financial Modeling Prep API is free to use, but they only allow 250 requests per day for testing and debugging. If you are planning on using this code as a tool, it recommended you purchase unlimited access for $15-$19/month. (Pay for FMP here: https://financialmodelingprep.com/developer/docs/pricing)
 
-In addition, I used SQLite as the DBMS, which means it's very user-friendly (especially for people with little/no experience with databases), free, and lightweight; However, SQLite is designed for only one user and can cause issues if you are looking to seriously build out/expand the database. (Download SQLite here: https://sqlite.org/download.html)
+In addition, I used SQLite as the DBMS, which means it's free and very user-friendly (especially for people with little/no experience with databases); However, SQLite is designed for only one user and can cause issues if you are looking to seriously build out/expand the database. (Download SQLite here: https://sqlite.org/download.html)
 
 
 HOW TO USE:
